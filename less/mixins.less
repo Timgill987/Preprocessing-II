@@ -1,1 +1,28 @@
 // Mixins in here
+.flex-row{
+    display:flex;
+    justify-content: space-around;
+    
+    flex-direction: row;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-crev{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons(@blue: #17A2B8, @fish: @main-bg){
+    border-radius: 10px;
+    width:85%;
+    height:15%;
+    background-color: @blue;
+    color: @fish;
+    font-size: 18px;
+}
